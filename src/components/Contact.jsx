@@ -191,7 +191,7 @@ function Contact() {
 
         <div className="text-center mb-14">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
-            Let’s Work Together
+            Let’s Connect
           </h1>
 
           <p className="text-gray-600 dark:text-gray-400 mt-5 max-w-2xl mx-auto leading-7">
@@ -220,11 +220,7 @@ function Contact() {
                     Contact Me
                   </h2>
 
-                  <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
-                    Fast Response
-                    <br />
-                    Modern Solutions
-                  </p>
+                  
                 </div>
               </div>
             </div>
