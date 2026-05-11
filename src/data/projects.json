@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Weather Checking Site",
+    "description": "A modern live weather application that provides real-time weather updates, forecasts, humidity, temperature, and location-based weather data.",
+    "type": "website",
+    "image": "/assets/weather.png",
+    "github": "https://github.com/yourusername/weather-app",
+    "demo": "https://your-weather-demo.vercel.app"
+  },
+  {
+    "title": "X Clone",
+    "description": "A modern social media platform inspired by X (Twitter) with responsive UI, post system, authentication, and interactive user experience.",
+    "type": "website",
+    "image": "/assets/xclone.png",
+    "github": "https://github.com/yourusername/x-clone",
+    "demo": "https://xclone-demo.vercel.app"
+  },
+  {
+    "title": "Smart IoT System",
+    "description": "An IoT-based automation project using sensors and ESP32 for real-time monitoring, control, and smart automation.",
+    "type": "iot",
+    "image": "/assets/iot.png",
+    "github": "https://github.com/yourusername/iot-project",
+    "demo": "https://iot-demo.vercel.app"
+  },
+  {
+    "title": "Smart IoT System",
+    "description": "An IoT-based automation project using sensors and ESP32 for real-time monitoring, control, and smart automation.",
+    "type": "iot",
+    "image": "/assets/iot.png",
+    "github": "https://github.com/yourusername/iot-project",
+    "demo": "https://iot-demo.vercel.app"
+  }
+]
