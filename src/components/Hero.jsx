@@ -2,6 +2,7 @@ import React from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { Mail } from "lucide-react";
 import photo from "../data/photo.png";
+import pdf from "../data/Debabrata Paul.pdf";
 const Hero = () => {
   return (
     <section
@@ -27,7 +28,7 @@ const Hero = () => {
         </p>
 
         <button className="mt-8 bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-2xl text-white font-semibold shadow-lg">
-          <a href="img/Debabrata_Resume.pdf">Download CV</a>
+          <a href={pdf} target="_self" >Download CV</a>
         </button>
       </div>
 
