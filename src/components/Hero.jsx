@@ -1,6 +1,7 @@
 import React from "react";
+import { CiLinkedin } from "react-icons/ci";
 import { Mail } from "lucide-react";
-
+import photo from "../data/photo.png";
 const Hero = () => {
   return (
     <section
@@ -9,9 +10,7 @@ const Hero = () => {
     >
       {/* LEFT */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-          Hi I am
-        </p>
+        <p className="text-lg text-gray-600 dark:text-gray-400">Hi I am</p>
 
         <h1 className="text-orange-500 font-bold text-3xl sm:text-4xl mt-2">
           Debabrata Paul
@@ -39,17 +38,27 @@ const Hero = () => {
 
           <div className="relative bg-white dark:bg-[#111] border border-black/10 dark:border-white/10 rounded-full w-72 h-72 sm:w-80 sm:h-80 overflow-hidden shadow-2xl">
             {/* IMAGE */}
+            <img src={photo} alt="" />
           </div>
         </div>
 
         {/* MAIL */}
-        <a
-          href="mailto:debabratapaul@example.com"
-          className="mt-6 flex items-center gap-3 bg-white dark:bg-[#111] border border-black/10 dark:border-white/10 px-5 py-3 rounded-2xl hover:scale-105 transition"
-        >
-          <Mail className="text-orange-500" />
-          <Mail className="text-orange-500" />
-        </a>
+        <div className="flex gap-2">
+          <a
+            href="mailto:help.devapps@gmail.com"
+            className="mt-6 flex items-center gap-3 bg-white dark:bg-[#111] border border-black/10 dark:border-white/10 px-2 py-1 rounded-2xl hover:scale-105 transition"
+          >
+            <Mail className="text-orange-500" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-id"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex items-center gap-3 bg-white dark:bg-[#111] border border-black/10 dark:border-white/10 px-2 py-1 rounded-2xl hover:scale-105 transition"
+          >
+            <CiLinkedin size={28} className="text-orange-500" />
+          </a>
+        </div>
       </div>
     </section>
   );
