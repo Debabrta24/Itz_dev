@@ -119,11 +119,11 @@ const Projects = () => {
       {/* BACKGROUND */}
 
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-400/10 blur-[120px] rounded-full"></div>
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-125 w-125 bg-orange-400/10 blur-[120px] rounded-full"></div>
 
-        <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-amber-300/10 blur-[100px] rounded-full"></div>
+        <div className="absolute bottom-0 left-0 w-87.5 h-87.5 bg-amber-300/10 blur-[100px] rounded-full"></div>
 
-        <div className="absolute top-40 right-0 w-[300px] h-[300px] bg-yellow-300/10 blur-[100px] rounded-full"></div>
+        <div className="absolute top-40 right-0 w-75 h-[300px] bg-yellow-300/10 blur-[100px] rounded-full"></div>
       </div>
 
       <div className="max-w-[1700px] mx-auto">

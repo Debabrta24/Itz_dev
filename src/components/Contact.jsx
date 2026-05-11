@@ -206,7 +206,7 @@ function Contact() {
           {/* LEFT */}
 
           <div className="hidden lg:flex justify-center items-center">
-            <div className="relative w-[350px] h-[350px]">
+            <div className="relative w-87.5 h-87.5">
               <div className="absolute inset-0 rounded-full border-4 border-orange-500/20 animate-pulse"></div>
 
               <div className="absolute inset-10 rounded-full border-4 border-orange-500 flex items-center justify-center bg-white dark:bg-[#111] shadow-2xl">
