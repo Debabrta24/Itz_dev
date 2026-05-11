@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Globe,
   Smartphone,
@@ -10,26 +11,26 @@ const services = [
   {
     title: "Website Development",
     description:
-      "I create responsive, fast, and modern websites with smooth user experiences across all devices.",
-    icon: <Globe size={42} />,
+      "I create responsive, fast, and modern websites with smooth user experiences.",
+    icon: <Globe size={30} />,
   },
   {
-    title: "Mobile App Development",
+    title: "Mobile Apps",
     description:
-      "I develop intuitive and high-performance mobile applications with clean UI and reliable functionality.",
-    icon: <Smartphone size={42} />,
+      "Modern mobile applications with clean UI and powerful functionality.",
+    icon: <Smartphone size={30} />,
   },
   {
     title: "IoT Solutions",
     description:
-      "I build smart IoT systems that connect devices, automate tasks, and provide real-time solutions.",
-    icon: <Cpu size={42} />,
+      "Smart IoT systems for automation and real-time connected experiences.",
+    icon: <Cpu size={30} />,
   },
   {
     title: "UI / UX Design",
     description:
-      "I design modern, user-friendly interfaces focused on smooth interaction and better user experience.",
-    icon: <Palette size={42} />,
+      "Beautiful user interfaces focused on modern user experience.",
+    icon: <Palette size={30} />,
   },
 ];
 
@@ -40,93 +41,178 @@ const Services = () => {
       className="
         relative
         overflow-hidden
-        py-20 sm:py-28
-        px-4 sm:px-6 lg:px-8
-        bg-white dark:bg-[#0a0a0a]
-        transition-colors duration-500
+        py-20
+        sm:py-28
+        px-4
+        sm:px-6
+        lg:px-8
+        bg-white
+        dark:bg-[#0a0a0a]
+        transition-colors
+        duration-500
       "
     >
-      {/* Background Graphics */}
-      <div className="absolute inset-0 -z-10">
-        {/* Top Glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-amber-500/20 dark:bg-amber-500/10 blur-[120px] rounded-full"></div>
+      {/* BACKGROUND */}
 
-        {/* Left Glow */}
-        <div className="absolute top-40 left-0 w-[300px] h-[300px] bg-orange-400/20 dark:bg-orange-500/10 blur-[100px] rounded-full"></div>
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-400/10 blur-[120px] rounded-full"></div>
 
-        {/* Right Glow */}
-        <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-yellow-300/20 dark:bg-yellow-500/10 blur-[100px] rounded-full"></div>
+        <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-amber-300/10 blur-[100px] rounded-full"></div>
 
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(120,120,120,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(120,120,120,0.08)_1px,transparent_1px)] bg-[size:40px_40px] dark:bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)]"></div>
+        <div className="absolute top-40 right-0 w-[300px] h-[300px] bg-yellow-300/10 blur-[100px] rounded-full"></div>
       </div>
 
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
+        {/* HEADING */}
+
         <div className="text-center max-w-3xl mx-auto">
-          <p className="text-amber-500 font-semibold tracking-[0.3em] uppercase">
+          <p className="text-orange-500 font-semibold tracking-[0.3em] uppercase mb-4">
             My Services
           </p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 dark:text-white leading-tight">
-            What I Can Build For You
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+            What I Can Build
           </h1>
 
           <p className="text-gray-600 dark:text-gray-400 mt-6 text-sm sm:text-base leading-7">
-            I provide modern digital solutions including responsive websites,
-            mobile apps, IoT systems, and UI/UX design to help turn ideas into
-            real-world products.
+            Modern websites, mobile apps, IoT systems, and UI/UX
+            experiences with clean and responsive designs.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
+        {/* SERVICES GRID */}
+
+        <div
+          className="
+            grid
+            grid-cols-2
+            lg:grid-cols-4
+            gap-4
+            sm:gap-6
+            lg:gap-7
+            mt-14
+          "
+        >
           {services.map((service, index) => (
             <div
               key={index}
               className="
-                group
                 relative
                 overflow-hidden
                 rounded-3xl
                 border
                 border-black/10
                 dark:border-white/10
-                bg-white/70
-                dark:bg-white/5
-                backdrop-blur-xl
-                p-8
+                bg-[#f8f8f8]
+                dark:bg-[#111111]
+                p-4
+                sm:p-6
+                lg:p-8
+                shadow-lg
                 transition-all
                 duration-500
                 hover:-translate-y-3
-                hover:border-amber-400/50
-                hover:shadow-[0_0_40px_rgba(251,191,36,0.25)]
+                hover:shadow-[0_0_40px_rgba(249,115,22,0.25)]
+                hover:border-orange-500/40
+                active:scale-95
+                cursor-pointer
               "
             >
-              {/* Card Glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-amber-400/10 via-orange-400/5 to-transparent"></div>
+              {/* HOVER GLOW */}
 
-              {/* Animated Circle */}
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-400/10 rounded-full blur-3xl group-hover:scale-150 transition duration-700"></div>
+              <div
+                className="
+                  absolute
+                  inset-0
+                  opacity-0
+                  hover:opacity-100
+                  transition-all
+                  duration-500
+                  bg-gradient-to-br
+                  from-orange-400/10
+                  via-amber-400/5
+                  to-transparent
+                  pointer-events-none
+                "
+              ></div>
 
-              {/* Icon */}
-              <div className="relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white shadow-lg mx-auto mb-6 group-hover:rotate-6 transition duration-500">
-                {service.icon}
-              </div>
+              {/* TOP GLOW */}
 
-              {/* Content */}
+              <div
+                className="
+                  absolute
+                  -top-10
+                  -right-10
+                  w-28
+                  h-28
+                  bg-orange-500/10
+                  blur-3xl
+                  rounded-full
+                  pointer-events-none
+                "
+              ></div>
+
+              {/* CONTENT */}
+
               <div className="relative z-10 text-center">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                {/* ICON */}
+
+                <div
+                  className="
+                    w-14
+                    h-14
+                    sm:w-16
+                    sm:h-16
+                    rounded-2xl
+                    bg-gradient-to-br
+                    from-orange-500
+                    to-amber-400
+                    flex
+                    items-center
+                    justify-center
+                    text-white
+                    mx-auto
+                    mb-4
+                    shadow-lg
+                    transition-transform
+                    duration-500
+                    hover:rotate-6
+                  "
+                >
+                  {service.icon}
+                </div>
+
+                {/* TITLE */}
+
+                <h2 className="text-sm sm:text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {service.title}
                 </h2>
 
-                <p className="text-gray-600 dark:text-gray-400 text-sm leading-6">
+                {/* DESCRIPTION */}
+
+                <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm leading-5 sm:leading-6">
                   {service.description}
                 </p>
               </div>
 
-              {/* Bottom Animated Line */}
-              <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-400 group-hover:w-full transition-all duration-500"></div>
+              {/* BOTTOM LINE */}
+
+              <div
+                className="
+                  absolute
+                  bottom-0
+                  left-0
+                  h-1
+                  w-0
+                  bg-gradient-to-r
+                  from-orange-500
+                  via-amber-400
+                  to-yellow-400
+                  hover:w-full
+                  transition-all
+                  duration-500
+                "
+              ></div>
             </div>
           ))}
         </div>
