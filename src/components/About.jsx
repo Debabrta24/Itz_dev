@@ -188,7 +188,7 @@ const About = () => {
                   {/* PERCENT */}
 
                   <p className="text-orange-500 text-sm sm:text-base font-bold mt-1">
-                    {progress[index]}%
+                    {/* {progress[index]}% */}
                   </p>
                 </div>
               </div>
