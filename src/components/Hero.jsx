@@ -51,9 +51,9 @@ const Hero = () => {
             <Mail className="text-orange-500" />
           </a>
           <a
-            href="www.linkedin.com/in/debabrata2024"
+            href="https://www.linkedin.com/in/debabrata2024"
             target="_blank"
-            // rel="noopener noreferrer"
+            rel="noopener noreferrer"
             className="mt-6 flex items-center gap-3 bg-white dark:bg-[#111] border border-black/10 dark:border-white/10 px-2 py-1 rounded-2xl hover:scale-105 transition"
           >
             <CiLinkedin size={28} className="text-orange-500" />
